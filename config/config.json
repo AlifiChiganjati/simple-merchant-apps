@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "db_merchant",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "",
+    "database": "db_merchant",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "postgres",
+    "password": "",
+    "database": "db_merchant",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "operatorsAliases": false
+  }
+}
+
