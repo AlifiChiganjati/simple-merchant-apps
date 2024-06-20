@@ -1,23 +1,24 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-const passport = require('passport')
-const {db} = require('./config/index')
-const helmet = require('helmet')
-const cors = require('cors')
-const bodyParser = require('body-parser')
+const passport = require("passport");
+const { db } = require("./config/index");
+const helmet = require("helmet");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const createApp = () => {
-    db.authenticate().then(() => console.log('database connected'))
-    .catch(err => console.log(err))
-    app.use(helmet())
-    app.use(cors())
-    app.use(passport.initialize())
-    app.use(bodyParser())
-    
-    require('./routes/main.routes')(app)
+  db.authenticate()
+    .then(() => console.log("database connected"))
+    .catch((err) => console.log(err));
+  app.use(helmet());
+  app.use(cors());
+  app.use(passport.initialize());
+  app.use(bodyParser.json());
 
-    return app
-}
+  require("./routes/main.routes")(app);
 
-module.exports = {createApp}
+  return app;
+};
+
+module.exports = { createApp };
