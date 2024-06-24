@@ -1,7 +1,6 @@
 const db = require("../../models");
 const users = db.users;
 const merchants = db.merchants;
-const jwt = require("jsonwebtoken");
 
 class merchantController {
   async registerMerchant(req, res, next) {
@@ -45,21 +44,6 @@ class merchantController {
       });
     }
   }
-
-  // async listMerchant(req, res, next) {
-  //   try {
-  //     const findMerchant = await merchants.findAll();
-  //     return res.status(200).json({
-  //       status: "success",
-  //       message: "list merchant berhasil ditampilkan",
-  //       data: findMerchant,
-  //     });
-  //   }catch(err){
-  //       return res.status(400).json({
-  //           status: 'error',
-  //           message: err.message
-  //       })
-  //   }
 }
 
 module.exports = merchantController;
