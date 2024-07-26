@@ -35,7 +35,9 @@ sequelize-auto -o "./models" -d db_merchant -h localhost -u postgres -p 5432  -e
 
 ### Middleware Pattern
 
--The middleware functions logger and authenticate wrap the route handler.
--They can execute logic before and after the route.
--The next() function passes control to the next middleware.
--app.use() mounts the middleware globally.
+```
+- The middleware functions logger and authenticate wrap the route handler.
+- They can execute logic before and after the route.
+- The next() function passes control to the next middleware.
+- app.use() mounts the middleware globally.
+```
