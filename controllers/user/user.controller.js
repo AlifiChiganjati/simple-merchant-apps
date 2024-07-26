@@ -25,7 +25,7 @@ class userController {
     } catch (err) {
       return res.status(400).json({
         status: "error",
-        message: "email al",
+        message: err.message,
       });
     }
   }
