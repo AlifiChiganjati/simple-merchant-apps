@@ -41,3 +41,5 @@ sequelize-auto -o "./models" -d db_merchant -h localhost -u postgres -p 5432  -e
 - The next() function passes control to the next middleware.
 - app.use() mounts the middleware globally.
 ```
+
+I Used Middleware Pattern in my project coz i familiar with this pattern, in bootcamp i learn project using this pattern.
