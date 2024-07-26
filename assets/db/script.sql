@@ -36,9 +36,9 @@ CREATE TABLE IF NOT EXISTS "transactions" (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID  REFERENCES users(id),
   merchant_id UUID  REFERENCES merchants(id),
-  transaction_noT INTEGER NOT NULL,
+  transactions_no INTEGER NOT NULL,
   point_total INTEGER NOT NULL,
-  subtotal DECIMAL(10,2) NOT NULL,
+  subtotal DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS "transactions_detail" (
