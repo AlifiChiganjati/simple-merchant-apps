@@ -34,7 +34,7 @@ class merchantController {
         message: "Register merchant berhasil",
         Data: {
           userData: userRepo,
-          merchantData: findMerchant,
+          // merchantData: findMerchant,
         },
       });
     } catch (err) {

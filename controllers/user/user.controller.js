@@ -75,7 +75,7 @@ class userController {
         data: {
           token,
           userData,
-          merchantData: checkMerchant,
+          // merchantData: checkMerchant,
         },
       });
     } catch (err) {
